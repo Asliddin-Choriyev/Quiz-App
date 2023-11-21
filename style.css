@@ -1,0 +1,435 @@
+body {
+  overflow: hidden;
+  background-color: #001e4d;
+}
+.main {
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+button {
+  width: 400px;
+  height: 80px;
+  margin-left: 100px;
+  margin-top: 20px;
+  border-radius: 15%;
+  font-size: 32px;
+  outline: 1px solid orange;
+  border: 1px solid orange;
+  color: purple;
+}
+.app-contain {
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin-left: 600px;
+  margin-top: 120px;
+  border-radius: 10px;
+  padding: 30px;
+  border: 5px solid orange;
+  padding-bottom: 80px;
+}
+.common {
+  padding: 20px 0;
+}
+#question {
+  font-size: 26px;
+  text-align: center;
+  background-color: aqua;
+  outline: 3px dotted blue;
+  padding: 50px;
+  border-radius: 50px;
+  margin-top: -20px;
+}
+#answer-btns {
+  display: flex;
+  flex-direction: column;
+}
+.next-btn {
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  width: 200px;
+  margin-left: 830px;
+  margin-top: 30px;
+}
+button:active {
+  border: 2px solid yellow;
+  background-color: yellow;
+  cursor: pointer;
+}
+#quizCount {
+  position: absolute;
+  top: 740px;
+  left: 46%;
+  font-size: 20px;
+}
+.next-btn:hover {
+  background-color: darkgreen;
+}
+
+.results {
+  width: 750px;
+  background-color: gray;
+  border-radius: 40px;
+  margin: 100px auto;
+}
+.results > p {
+  font-size: 72px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.true-box {
+  position: absolute;
+  top: 23%;
+  left: 33%;
+  width: 300px;
+  height: 340px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 122px;
+  color: wheat;
+  border: 5px solid darkgreen;
+}
+.false-box {
+  position: absolute;
+  top: 23%;
+  left: 51%;
+  width: 300px;
+  height: 340px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 122px;
+  border: 5px solid darkred;
+}
+.true-box > h1 {
+  margin-top: -30px;
+}
+.false-box > h1 {
+  margin-top: -30px;
+}
+.true-box > p {
+  font-size: 26px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.false-box > p {
+  font-size: 26px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.results > button:hover {
+  background-color: rgb(241, 127, 127);
+}
+
+.results > button {
+  margin-top: 350px;
+  margin-left: 180px;
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+
+.anime-hidden {
+  animation: hidden 1s linear forwards;
+  animation-delay: 1s;
+}
+.anime-show {
+  animation: show 2s linear forwards;
+}
+
+/* .home-page {
+  margin-left: 110px;
+  margin-top: 20px;
+}
+.home-page > img {
+  height: 900px;
+} */
+@media (max-width: 1440px) {
+  .app-contain {
+    margin-left: 360px;
+    margin-top: 20px;
+  }
+  #quizCount {
+    margin-top: -65px;
+    margin-left: -20px;
+  }
+  .next-btn {
+    margin-left: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  .app-contain {
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+  #quizCount {
+    margin-top: -80px;
+    margin-left: -40px;
+  }
+  .next-btn {
+    margin-left: 400px;
+    margin-top: 10px;
+  }
+  .true-box {
+    margin-left: -145px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-left: -110px;
+    margin-top: 20px;
+  }
+  .next-btn {
+    width: 150px;
+    margin-left: 420px;
+    height: 60px;
+  }
+  #quizCount {
+    margin-top: -685px;
+    margin-left: -25px;
+  }
+  .true-box {
+    margin-left: -188px;
+    margin-top: 25px;
+  }
+  .false-box {
+    margin-top: 25px;
+  }
+  .results > button {
+    margin-top: 375px;
+  }
+  #option1 :active {
+    background-color: red;
+  }
+  .results {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 425px) {
+  /* .home-page {
+    margin-left: -20px;
+    margin-top: 20px;
+  } */
+  /* .home-page > img {
+    width: 27em;
+    height: 45em;
+    object-fit: contain;
+  } */
+  .hidden {
+    display: none;
+  }
+  .app-contain {
+    min-width: 400px;
+    height: 490px;
+    margin-left: 110px;
+    margin-top: -10px;
+    padding-top: 70px;
+    padding-bottom: 31px;
+  }
+  #question {
+    margin-left: -20px;
+    width: 280px;
+  }
+  button {
+    margin-left: -18px;
+    width: 360px;
+    height: 50px;
+    margin-top: 15px;
+  }
+  #quizCount {
+    margin-top: -720px;
+    margin-left: -48px;
+  }
+  .next-btn {
+    margin-left: 250px;
+    margin-top: -65px;
+    width: 120px;
+    height: 50px;
+  }
+  .true-box {
+    width: 200px;
+    margin-left: 5px;
+  }
+
+  .results {
+    width: 350px;
+    height: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .true-box {
+    margin-left: -23px;
+    margin-top: -15px;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .false-box {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 185px;
+    margin-left: -100px;
+  }
+
+  .true-box > h1 {
+    margin-top: -30px;
+    font: 1.3em sans-serif;
+  }
+  .false-box > h1 {
+    margin-top: -30px;
+    font: 1.3em sans-serif;
+  }
+  .true-box > p {
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .false-box > p {
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .results > p {
+    margin-top: 10px;
+    font-size: 62px;
+  }
+  .results > button {
+    margin-top: 400px;
+    width: 295px;
+    margin-left: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .hidden {
+    display: none;
+  }
+  body {
+    min-width: 290px;
+  }
+  .results {
+    overflow-x: hidden;
+  }
+  .app-contain {
+    width: 290px;
+    margin-left: 110px;
+    margin-top: -20px;
+    height: 500px;
+  }
+  #question {
+    margin-left: -30px;
+    width: 268px;
+    padding-left: 35px;
+    text-align: center;
+  }
+  button {
+    margin-left: -5px;
+    width: 300px;
+    font-size: 19px;
+  }
+  #quizCount {
+    margin-top: -680px;
+    margin-left: -50px;
+    background-color: white;
+    padding: 5px;
+  }
+  .next-btn {
+    margin-left: 230px;
+    margin-top: -50px;
+  }
+  .results {
+    width: 350px;
+    height: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .true-box {
+    margin-left: -32px;
+    margin-top: -15px;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .false-box {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 185px;
+    margin-left: -98px;
+  }
+
+  .true-box > h1 {
+    margin-top: -30px;
+    font: 1.3em sans-serif;
+  }
+  .false-box > h1 {
+    margin-top: -30px;
+    font: 1.3em sans-serif;
+  }
+  .true-box > p {
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .false-box > p {
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .results > p {
+    margin-top: 10px;
+    font-size: 62px;
+  }
+  .results > button {
+    margin-top: 400px;
+    margin-left: 25px;
+  }
+}
+@keyframes hidden {
+  30% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

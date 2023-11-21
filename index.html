@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="home-page">
+      <img src="./assets/Android Large - 10.png" alt="" />
+    </div> -->
+    <!-- Tepada saytning kirish qismi uchu logotip bo'lishi kerak.
+    Bazi muammolar bo'lgani uchun ushbu qism tugallanmadi-->
+    <div class="main">
+      <div class="app-contain">
+        <div class="quiz">
+          <h2 id="question"></h2>
+          <button class="option" id="option1" onclick="checker(this)"></button>
+          <button class="option" id="option2" onclick="checker(this)"></button>
+          <button class="option" id="option3" onclick="checker(this)"></button>
+          <button class="option" id="option4" onclick="checker(this)"></button>
+          <p id="quizCount"></p>
+        </div>
+      </div>
+      <button class="next-btn">Next</button>
+    </div>
+    <div class="results hidden">
+      <p>Your results</p>
+      <div class="true-box hidden">
+        <p>Right Answers</p>
+        <h1></h1>
+      </div>
+      <div class="false-box hidden">
+        <p>Wrong Answers</p>
+        <h1></h1>
+      </div>
+      <button onclick="backQuiz()">back quiz</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
