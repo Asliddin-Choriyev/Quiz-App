@@ -207,6 +207,9 @@ button:active {
   }
 }
 @media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
   .main {
     margin-left: -110px;
     margin-top: 20px;
