@@ -99,7 +99,5 @@ next_btn.addEventListener("click", nextQuiz);
 showQestion();
 
 function backQuiz() {
-  trueBox.style.backgroundColor = "red";
-  falseBox.style.marginTop = "500px";
   location.reload();
 }
