@@ -268,7 +268,7 @@ button:active {
   button {
     margin-left: -18px;
     width: 360px;
-    height: 70px;
+    height: 65px;
     margin-top: 15px;
   }
   #quizCount {
@@ -358,7 +358,7 @@ button:active {
     margin-left: -5px;
     width: 300px;
     font-size: 19px;
-    height: 75px;
+    height: 65px;
     font-size: 26px;
   }
   #quizCount {
